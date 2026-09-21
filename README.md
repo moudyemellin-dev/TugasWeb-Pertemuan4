@@ -1,4 +1,4 @@
-# Tugas Rutin 4 - Konversi CSS ke SCSS
+# Tugas Rutin 4 Pemrograman Web - Konversi CSS ke SCSS
 
 Tugas ini merupakan konversi CSS dari Pertemuan 2 ke SCSS menggunakan struktur modular 7-1 pattern.
 
