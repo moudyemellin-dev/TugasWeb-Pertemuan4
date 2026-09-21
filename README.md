@@ -37,3 +37,5 @@ Tugas ini merupakan konversi CSS dari Pertemuan 2 ke SCSS menggunakan struktur m
 
 ```bash
 npx sass scss/main.scss style.css
+```
+ko
