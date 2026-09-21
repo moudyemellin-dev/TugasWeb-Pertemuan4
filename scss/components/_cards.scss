@@ -1,0 +1,120 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+// ==============================
+// CONTENT CARD
+// ==============================
+
+.content-card {
+    @include m.card-style(
+        linear-gradient(145deg, v.$white, #fbfcf9),
+        18px,
+        30px 32px
+    );
+
+    border: 1px solid v.$border;
+    box-shadow: v.$shadow;
+
+    h3 {
+        margin-bottom: 13px;
+        color: #45634a;
+        font-size: 21px;
+    }
+
+    p {
+        margin-bottom: 12px;
+        color: v.$text-light;
+        font-size: 14px;
+    }
+}
+
+
+// ==============================
+// ACADEMIC CARD
+// ==============================
+
+.academic-card {
+    @include m.card-style(
+        rgba(255, 255, 255, 0.88),
+        17px,
+        30px 25px
+    );
+
+    text-align: center;
+    border: 1px solid v.$border;
+
+    box-shadow:
+        0 10px 30px
+        rgba(59, 82, 63, 0.08);
+
+    @include m.transition;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+
+    h3 {
+        margin-bottom: 7px;
+        color: #38563e;
+        font-size: 19px;
+    }
+
+    p {
+        color: v.$text-light;
+        font-size: 14px;
+    }
+}
+
+
+// ==============================
+// HOBBY CARD
+// ==============================
+
+.hobby-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 285px;
+
+    @include m.card-style(
+        linear-gradient(145deg, v.$white, #f7faf5),
+        22px,
+        38px 30px
+    );
+
+    border: 1px solid v.$border;
+
+    box-shadow:
+        0 12px 32px
+        rgba(58, 84, 62, 0.08);
+
+    @include m.transition(0.35s);
+
+    &:hover {
+        transform: translateY(-9px);
+
+        border-color: #bdd2be;
+
+        box-shadow:
+            0 22px 48px
+            rgba(58, 84, 62, 0.15);
+    }
+
+    h3 {
+        position: relative;
+        z-index: 2;
+
+        margin-bottom: 9px;
+
+        color: #3b5c41;
+        font-size: 20px;
+    }
+
+    p {
+        position: relative;
+        z-index: 2;
+
+        color: v.$text-light;
+        font-size: 14px;
+    }
+}

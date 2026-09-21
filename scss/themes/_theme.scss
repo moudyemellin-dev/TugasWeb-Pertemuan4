@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as v;
+
+// ==============================
+// THEME COLOR LOOP
+// ==============================
+
+$theme-colors: (
+    primary: v.$green-main,
+    dark: v.$green-dark,
+    medium: v.$green-medium,
+    light: v.$green-light,
+    soft: v.$green-soft
+);
+
+@each $name, $color in $theme-colors {
+
+    .text-#{$name} {
+        color: $color;
+    }
+
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}

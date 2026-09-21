@@ -1,0 +1,41 @@
+// ==============================
+// MIXINS
+// ==============================
+
+// 1. Flex Center
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// 2. Card Style
+@mixin card-style(
+    $background: #ffffff,
+    $border-radius: 18px,
+    $padding: 30px
+) {
+    padding: $padding;
+    background: $background;
+    border-radius: $border-radius;
+}
+
+
+// 3. Responsive Grid
+@mixin responsive-grid(
+    $columns: 3,
+    $gap: 24px
+) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+
+// 4. Transition
+@mixin transition(
+    $duration: 0.3s
+) {
+    transition: all $duration ease;
+}

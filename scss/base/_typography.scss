@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as v;
+
+// ==============================
+// TYPOGRAPHY
+// ==============================
+
+body {
+    font-family: v.$font-primary;
+    color: v.$text;
+    background: #fbfcf9;
+}
+
+.logo,
+.hero h1,
+.section-heading h2,
+.contact-intro h2,
+.footer-logo,
+.hobby-number {
+    font-family: v.$font-heading;
+}

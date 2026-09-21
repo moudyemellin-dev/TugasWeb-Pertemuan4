@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+// ==============================
+// BUTTONS
+// ==============================
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+
+    .btn {
+        min-width: 145px;
+        padding: 12px 22px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        color: v.$green-dark;
+        background: v.$white;
+
+        border: 1px solid #8aaa8b;
+        border-radius: 8px;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        @include m.transition(0.2s);
+
+        &:hover {
+            color: v.$white;
+            background: v.$green-main;
+            border-color: v.$green-main;
+
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            color: v.$white;
+            background: v.$green-dark;
+            border-color: v.$green-dark;
+
+            transform: translateY(0);
+        }
+    }
+}
